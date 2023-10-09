@@ -1,0 +1,243 @@
+/* GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  HEADER */
+header {
+    background-color: $color-primario;
+    font-family: $fuente-secundario;
+}
+
+.nav-link {
+    color: $color-claro-detalles;
+
+    &:focus,
+    &:hover {
+        color: $color-secundario;
+    }
+}
+
+.navbar-nav{
+    .nav-link.active, .nav-link.show{
+        color: $color-secundario;
+    }
+}
+
+.boton-buscar button {
+    color: $color-claro-detalles;
+    border-color: $color-claro-detalles;
+    opacity: 0.3;
+
+    &:hover{
+        background-color: $color-secundario;
+    }
+}
+
+.icono-navbar button {
+    border-color: rgb(68, 68, 68);
+
+    &:hover{
+        border-color: $color-secundario;
+        background-color: $color-secundario;
+        transition: 0.5s;
+    }
+}
+
+.d-flex {
+    padding-top: 25px;
+
+    input {
+        height: 100%;
+    }
+
+    button {
+        height: 60%;
+    }
+}
+
+/* CARDS */
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.card {
+    max-width: 100%;
+    cursor: pointer;
+    width: 25rem;
+
+    h5{
+        font-family: $fuente-principal;
+    }
+
+    p{
+        font-family: $fuente-secundario;
+        font-size: $fuente-media - 5px;
+    }
+
+    ul{
+        li{
+            font-family: $fuente-terceario;
+            text-align: right;
+        }
+    }
+    
+}
+
+.card-img-top {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: $celular) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: start;
+    }
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .container-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* GIF */
+.video-box {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 100px auto 0;
+    padding-bottom: 40px;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: rgb(22, 22, 22);
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+
+    h4{
+        font-size: 18px;
+        color: $color-claro-detalles;
+        text-transform: capitalize;
+        margin-bottom: $padding-grande;
+        font-weight: 500;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: $color-rojizo-detalles;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+    }
+
+    ul{
+        li{
+            &:not(:last-child){
+                margin-bottom: $padding-chico;
+            }
+
+            a{
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: 300;
+                color: #bbbbbb;
+            }
+        }
+    }
+
+    .social-links{
+        a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: $color-claro-detalles;
+            transition: all 0.5s ease;
+
+            &:hover{
+                color: #24262b;
+                background-color: $color-claro-detalles;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+/* STORE*/
+.titulo-store h1{
+    border-bottom: $color-primario 3px solid;
+    margin: 24px;
+    padding-top: $padding-chico;
+    padding-bottom: $padding-grande;
+    font-family: $fuente-principal;
+    font-size: $fuente-titulo;
+}
+
+.logos-marcas{
+    padding-bottom: $padding-grande;
+
+    img{
+        height: $icono - 10px;
+        padding-left: $padding-grande;
+    }
+}
+

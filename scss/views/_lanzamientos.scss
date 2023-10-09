@@ -1,0 +1,35 @@
+/* LANZAMIENTOS*/
+.titulo-lanzamientos h1 {
+    background: rgb(121, 83, 0);
+    background: linear-gradient(90deg, rgba(121, 83, 0, 1) 0%, rgba(255, 252, 0, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    color: $color-primario;
+    padding: $padding-grande;
+    font-size: $fuente-titulo;
+}
+
+.container-lanzamientos {
+    padding: 50px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        cursor: default;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 30px;
+        font-family: $fuente-principal;
+        background-color: $color-amarillo-detalles;
+        cursor: default;
+    }
+
+    p{
+        font-family: $fuente-secundario;
+    }
+
+    .card {
+        width: 100%;
+        cursor: default;
+    }
+}
