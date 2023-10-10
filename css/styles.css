@@ -223,6 +223,12 @@ ul {
   font-size: 40px;
 }
 
+.container-gif {
+  background: #000;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
 /* STORE*/
 .titulo-store h1 {
   border-bottom: #000 3px solid;
