@@ -13,6 +13,7 @@
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 img {
@@ -62,6 +63,11 @@ header {
 }
 .d-flex button {
   height: 60%;
+}
+
+/* CARROUSEL */
+.carousel-inner h5 {
+  padding: 10px;
 }
 
 /* CARDS */
@@ -136,6 +142,20 @@ header {
   height: auto;
 }
 
+/* ICONO ARRIBA */
+.gotopbtn {
+  position: fixed;
+  width: 55px;
+  height: 80px;
+  bottom: 40px;
+  right: 5%;
+}
+
+.gotopbtn img {
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
 /* FOOTER */
 .container-footer {
   max-width: 1170px;
@@ -156,27 +176,13 @@ ul {
   padding: 70px 0;
 }
 
-/* ICONO ARRIBA */
-.gotopbtn {
-  position: fixed;
-  width: 55px;
-  height: 80px;
-  bottom: 40px;
-  right: 1%;
-}
-
-.gotopbtn img {
-  opacity: 0.8;
-  border-radius: 50%;
-}
-
 .footer-col {
   width: 25%;
   padding: 0 15px;
 }
 .footer-col h4 {
   font-size: 18px;
-  color: #ffffff;
+  color: #a72a68;
   text-transform: capitalize;
   margin-bottom: 30px;
   font-weight: 500;
@@ -185,12 +191,9 @@ ul {
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -10px;
   background-color: #a72a68;
-  height: 2px;
   box-sizing: border-box;
-  width: 50px;
+  max-width: 100%;
 }
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
@@ -218,15 +221,50 @@ ul {
   background-color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1350px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
   }
 }
-@media (max-width: 574px) {
+@media (max-width: 768px) {
+  .footer-col {
+    width: 50%;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 425px) {
   .footer-col {
     width: 100%;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 375px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 320px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
   }
 }
 /* INDEX*/
