@@ -102,21 +102,20 @@ header {
   gap: 20px;
   padding-bottom: 80px;
 }
-
-.card {
+.container-cards .card {
   max-width: 100%;
   cursor: pointer;
   width: 25rem;
   height: 730px;
 }
-.card h5 {
+.container-cards .card h5 {
   font-family: "Montserrat", sans-serif;
 }
-.card p {
+.container-cards .card p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
-.card ul li {
+.container-cards .card ul li {
   font-family: "Open Sans", sans-serif;
   text-align: left;
 }

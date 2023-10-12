@@ -108,31 +108,33 @@ header {
     justify-content: center;
     gap: 20px;
     padding-bottom: 80px;
-}
-
-.card {
-    max-width: 100%;
-    cursor: pointer;
-    width: 25rem;
-    height: 730px;
-
-    h5 {
-        font-family: $fuente-principal;
-    }
-
-    p {
-        font-family: $fuente-secundario;
-        font-size: $fuente-media - 5px;
-    }
-
-    ul {
-        li {
-            font-family: $fuente-terceario;
-            text-align: left;
+    
+    .card {
+        max-width: 100%;
+        cursor: pointer;
+        width: 25rem;
+        height: 730px;
+    
+        h5 {
+            font-family: $fuente-principal;
         }
+    
+        p {
+            font-family: $fuente-secundario;
+            font-size: $fuente-media - 5px;
+        }
+    
+        ul {
+            li {
+                font-family: $fuente-terceario;
+                text-align: left;
+            }
+        }
+    
     }
-
 }
+
+
 
 .card-img-top {
     width: 500px;
