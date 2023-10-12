@@ -71,6 +71,28 @@ header {
   padding: 10px;
 }
 
+/* ANUNCIOS */
+.card-anuncios .titulo-store h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.card-anuncios .card {
+  width: 100%;
+}
+.card-anuncios .card h5 {
+  text-align: center;
+}
+.card-anuncios img {
+  width: 100%;
+}
+
+/* SPOTIFY */
+.spotify {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* CARDS */
 .container-cards {
   display: flex;
@@ -85,6 +107,7 @@ header {
   max-width: 100%;
   cursor: pointer;
   width: 25rem;
+  height: 730px;
 }
 .card h5 {
   font-family: "Montserrat", sans-serif;

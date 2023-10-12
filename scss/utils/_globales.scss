@@ -74,6 +74,32 @@ header {
     padding: 10px;
 }
 
+/* ANUNCIOS */
+.card-anuncios {
+    .titulo-store h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .card {
+        width: 100%;
+
+        h5{
+            text-align: center;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* SPOTIFY */
+.spotify {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* CARDS */
 .container-cards {
     display: flex;
@@ -88,6 +114,7 @@ header {
     max-width: 100%;
     cursor: pointer;
     width: 25rem;
+    height: 730px;
 
     h5 {
         font-family: $fuente-principal;
@@ -198,7 +225,7 @@ ul {
     width: 25%;
     margin: 0 auto;
     padding-left: 40px;
-    
+
 
     h4 {
         font-size: 18px;
@@ -222,6 +249,7 @@ ul {
 
     ul {
         margin-right: 0;
+
         li {
             &:not(:last-child) {
                 margin-bottom: $padding-chico;
