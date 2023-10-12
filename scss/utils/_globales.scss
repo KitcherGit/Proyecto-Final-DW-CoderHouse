@@ -29,8 +29,10 @@ header {
     }
 }
 
-.navbar-nav{
-    .nav-link.active, .nav-link.show{
+.navbar-nav {
+
+    .nav-link.active,
+    .nav-link.show {
         color: $color-secundario;
     }
 }
@@ -40,7 +42,7 @@ header {
     border-color: $color-claro-detalles;
     opacity: 0.3;
 
-    &:hover{
+    &:hover {
         background-color: $color-secundario;
     }
 }
@@ -48,7 +50,7 @@ header {
 .icono-navbar button {
     border-color: rgb(68, 68, 68);
 
-    &:hover{
+    &:hover {
         border-color: $color-secundario;
         background-color: $color-secundario;
         transition: 0.5s;
@@ -68,7 +70,7 @@ header {
 }
 
 /* CARROUSEL */
-.carousel-inner h5{
+.carousel-inner h5 {
     padding: 10px;
 }
 
@@ -87,22 +89,22 @@ header {
     cursor: pointer;
     width: 25rem;
 
-    h5{
+    h5 {
         font-family: $fuente-principal;
     }
 
-    p{
+    p {
         font-family: $fuente-secundario;
         font-size: $fuente-media - 5px;
     }
 
-    ul{
-        li{
+    ul {
+        li {
             font-family: $fuente-terceario;
             text-align: left;
         }
     }
-    
+
 }
 
 .card-img-top {
@@ -156,7 +158,7 @@ header {
 }
 
 /* ICONO ARRIBA */
-.gotopbtn{
+.gotopbtn {
     position: fixed;
     width: 55px;
     height: 80px;
@@ -164,20 +166,21 @@ header {
     right: 5%;
 }
 
-.gotopbtn img{
+.gotopbtn img {
     opacity: 0.8;
     border-radius: 50%;
 }
 
 /* FOOTER */
 .container-footer {
-    max-width: 1170px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 ul {
@@ -186,22 +189,29 @@ ul {
 
 .footer {
     background-color: rgb(22, 22, 22);
-    padding: 70px 0;
+    padding-top: 70px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
+    margin: 0 auto;
+    padding-left: 40px;
+    
 
-    h4{
+    h4 {
         font-size: 18px;
         color: $color-rojizo-detalles;
         text-transform: capitalize;
         margin-bottom: $padding-grande;
         font-weight: 500;
         position: relative;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             background-color: $color-rojizo-detalles;
@@ -210,35 +220,37 @@ ul {
         }
     }
 
-    ul{
-        li{
-            &:not(:last-child){
+    ul {
+        margin-right: 0;
+        li {
+            &:not(:last-child) {
                 margin-bottom: $padding-chico;
             }
 
-            a{
+            a {
                 font-size: 16px;
                 text-decoration: none;
                 font-weight: 300;
                 color: #bbbbbb;
+                margin: 0 auto;
             }
         }
     }
 
-    .social-links{
-        a{
+    .social-links {
+        a {
             display: inline-block;
             height: 40px;
             width: 40px;
             background-color: rgba(255, 255, 255, 0.2);
-            margin: 0 10px 10px 0;
             text-align: center;
             line-height: 40px;
             border-radius: 50%;
             color: $color-claro-detalles;
             transition: all 0.5s ease;
+            margin: 0 auto;
 
-            &:hover{
+            &:hover {
                 color: #24262b;
                 background-color: $color-claro-detalles;
             }
@@ -249,7 +261,8 @@ ul {
 @media (max-width: $desktop) {
     .footer-col {
         width: 50%;
-        margin-bottom: 30px;
+        padding: 0;
+        margin: 0;
         text-align: center;
     }
 
